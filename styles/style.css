@@ -230,31 +230,32 @@
   }
 
   .main__section {
-    grid-template-columns: 236px 1fr 1fr;
+    display: grid;
+    gap: 20px;
   }
 
-  .cause .main__section-content,
-  .advice .main__section-content {
+  .section-cause .main__section-content,
+  .section-advice .main__section-content {
     grid-column: 2/4;
   }
 
-  .factors .main__section-content {
+  .section-factors .main__section-content {
     grid-column: span 3;
   }
 
-  .advice .main__section-title {
+  .section-advice .main__section-title {
     grid-row: span 2;
   }
 
-  .advice .main__section-subtitle {
+  .section-advice .main__section-subtitle {
     grid-column: span 2;
   }
 
-  .gallery .main__section-subtitle {
+  .section-gallery .main__section-subtitle {
     grid-column: span 3;
   }
 
-  .main__section.gallery {
+  .main__section.section.gallery {
     grid-template-rows: auto 192px 230px 318px;
   }
 
